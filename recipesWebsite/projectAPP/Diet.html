@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="chefC.css">
+<link rel="icon" href="icon.png"type="image/x-icon">
+
+    <title>Diet System</title>
+    <style>
+        .image {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .text {
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <a href="app.html">Home&nbsp;&nbsp;&nbsp;</a>
+            <a href="aboutUs.html">&nbsp;about us</a>
+        </nav>
+
+        <header id="dietHeader">
+            <h1><br>Diet</h1>
+            <h3 id="it"><br>"Revitalize your health journey with us. <br>Balanced nutrition, achievable goals, and delicious taste"</h3>
+        </header>
+
+        <main id ="diet">
+            <h2>Calorie Calculator</h2>
+
+            <form id="calorieForm">
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+                  <br>
+                  <br>
+                  <br>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+                             <br>
+               <br>
+                <br>
+                <button type="button" onclick="calculateCalories()">Calculate Calories</button>
+                 
+            </form>
+      
+            <div id="result" class="image">
+                <img src="cal1.png" height =450 width =350 >
+                <div id="caloriesText" class="text"></div>
+            </div>
+          
+
+            <script>
+                function calculateCalories() {
+                    var age = parseFloat(document.getElementById('age').value);
+                    var height = parseFloat(document.getElementById('height').value);
+                    var weight = parseFloat(document.getElementById('weight').value);
+
+                    var bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+                    var totalCalories = bmr * 1.2;
+
+                    var caloriesTextElement = document.getElementById('caloriesText');
+                    caloriesTextElement.innerHTML = `${totalCalories.toFixed(2)} kcal`;
+                }
+            </script>
+
+<div id = "flex">
+<img  src="jump.webp" height = 200 width =200 >
+Jumping rope burns approximately 700 calories per hour
+</div>
+<br>
+<div id = "flex">
+<img  src="h.svg" height = 200 width =200 >
+Running burns around 600 calories per hour
+</div>
+<br>
+<div id = "flex">
+<img  src="ci.png" height = 200 width =200 >
+Cycling burns around 300 calories per hour
+</div>
+<br>
+<div id = "flex">
+<img  src="swim.svg" height = 200 width =200 >
+Swimming burns around 420 calories per hour
+</div>
+<br>
+        </main>
+    </div>
+</body>
+</html>

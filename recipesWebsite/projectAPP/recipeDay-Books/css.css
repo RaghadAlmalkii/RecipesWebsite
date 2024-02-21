@@ -1,0 +1,193 @@
+
+
+
+  #wrapper{
+		background-color: white;
+		min-width:900px;
+		max-width:1280px;
+		box-shadow:5px 5px 5px;
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+
+  #title{		
+		font-size: 0.6em;
+		font-style: italic;
+		text-align: center;
+		padding-bottom: 2px;
+	}
+
+  header{
+		background-color:#ffe4d9;
+		color:#2a2018; 
+             height: 280px;
+             width: 99%;
+             background-image: url(im6.png);
+             background-repeat: no-repeat;
+             background-size: 170px;
+             background-position-x:620px ;
+             background-position-y:20px ;                          
+	}
+	#books{
+	height: 200px;
+             width: 99%;
+
+              background-image: url(img/book.png);
+             background-repeat: no-repeat;
+             background-size: 170px;
+             background-position-x:620px ;
+             background-position-y:13px ;  
+	}
+
+
+  body{
+
+		background-color:#EFD0BE ;
+		color:#221811;
+		font-family:Verdana, Arial,sans-serif;
+	
+	}
+
+  nav a{
+		color:#cfa18d ;
+text-decoration: none;
+	}
+
+h1{
+    padding:1px 10px;   
+padding-top: 80px;
+padding-left:200px ;
+font-size:1.9em ;
+font-family: sans-serif;
+background-image: url(img/im6be.png);
+ background-repeat: no-repeat;
+ background-size: 170px;
+ background-position-x:740px ;
+ background-position-y:80px ;
+}
+
+h3{
+	margin-left:200px ;
+	font-size: 0.7em;
+	color: #3f3832;
+}
+
+
+/*imgs*/
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+}
+
+.row {
+  display: flex; 
+  margin-bottom: 10px;
+  margin-left: 20px;  
+}
+
+.row:first-child {
+  margin-top: 10px;  
+}
+
+.image-info p {
+  margin-left: 10px; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.image-info h3 {
+  margin-top: 0; /* Remove default top margin of h3 */
+}
+
+.image-info a {
+  display: block; 
+  margin-top: 5px; 
+  margin-left: 10px;
+  color:#cf4708;
+}
+
+
+/*Recpe of the Day */
+
+#RecDay{
+	height: 200px;
+             width: 99%;
+
+              background-image: url(img/day.png);
+             background-repeat: no-repeat;
+             background-size: 170px;
+             background-position-x:620px ;
+             background-position-y:13px ;  
+	}
+
+  .recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .recipe-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .recipe-header img {
+    
+  
+    margin-right: 20px;
+  }
+  
+  .recipe-intro {
+    flex-grow: 1; 
+  }
+  
+  .recipe-section {
+    flex: 1;
+  }
+
+  .recipe-section h2 {
+    margin-bottom: 10px;
+  }
+  
+
+  .recipe-ingredients-method {
+    display: flex;
+  }
+
+  .recipe-section:last-child {
+    margin-right: 0; 
+  }
+
+  .cherryDD{
+    list-style-type: none;
+    padding-left: 40px; 
+    background-image: url(img/cherry.png);
+    background-size: 50px; 
+    background-repeat: no-repeat;
+  }
+
+  footer{
+		background-color: #cfa18d;
+		color:#000000;
+		font-size: 0.6em;
+		font-style: italic;
+		text-align: center;
+		padding-bottom: 10px;
+		border-width: 2px;
+		border-style: solid;
+		border-color:#221811 ;
+	}
+
+  .form label{
+    color:#ba2c1f; 
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  
